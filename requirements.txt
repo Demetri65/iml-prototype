@@ -1,2 +1,4 @@
 fastapi==0.119.1
 uvicorn==0.38.0
+python-dotenv==1.0.1
+watchfiles==0.24.0

@@ -86,7 +86,33 @@ Then install Python packages:
 pip install -r requirements.txt
 ```
 
-## 4) Run the app
+## 4) Configure Mapillary token (required for snapshot ingest)
+
+Create a Mapillary access token, then set it in your terminal session before running the app.
+
+Mac/Linux:
+
+```bash
+export MAPILLARY_ACCESS_TOKEN=YOUR_TOKEN_HERE
+```
+
+Windows (PowerShell):
+
+```powershell
+$env:MAPILLARY_ACCESS_TOKEN="YOUR_TOKEN_HERE"
+```
+
+You can also store it in a project `.env` file and the backend will load it automatically:
+
+```env
+MAPILLARY_ACCESS_TOKEN=MLY|YOUR_TOKEN_HERE
+```
+
+Snapshot ingestion stores files locally in:
+- `api/data/mapillary/images/`
+- `api/data/mapillary/index.json`
+
+## 5) Run the app
 
 Keep the virtual environment active, then run:
 
