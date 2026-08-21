@@ -6,11 +6,13 @@ A deployed Next.js and FastAPI prototype for querying Mapillary imagery by bound
 
 ![Example Mapillary snapshot](api/data/mapillary/images/1100125150470143_1024.jpg)
 
+[Mapillary capture 1100125150470143](https://www.mapillary.com/app/?pKey=1100125150470143) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
 ## Workflow
 
 1. Choose a geographic bounding box, an image limit, and an image type in the Next.js interface.
 2. Submit the selection to the FastAPI ingestion endpoint.
-3. The backend queries Mapillary, downloads each returned 1024px thumbnail, and records its capture and location metadata.
+3. The backend queries Mapillary, downloads each returned 1024px thumbnail, and records its location and camera metadata.
 4. The interface reloads the locally stored dataset so its images and metadata can be reviewed without querying Mapillary again.
 
 ## Architecture
