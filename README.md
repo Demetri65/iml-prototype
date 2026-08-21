@@ -74,7 +74,7 @@ SETUP.md                     Detailed cross-platform setup instructions
 
 ## Current limitations
 
-- Snapshot data is stored on the local filesystem, so it is not shared between deployments or users.
+- Snapshot data is written to the local filesystem and is not reliably durable or synchronized across deployments or server instances.
 - Live ingestion depends on a valid Mapillary access token and the availability of the Mapillary API.
 - Bounding boxes are intentionally limited in size, and ingestion is capped to keep each request manageable.
 - The gallery is a review surface for collected metadata and images; it does not yet provide map-based exploration, authentication, or durable cloud storage.
