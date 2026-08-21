@@ -1,8 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Starter App",
-  description: "A minimal Next.js + FastAPI starter.",
+  title: "Mapillary Snapshot Ingestion",
+  description:
+    "A Next.js and FastAPI prototype for ingesting and exploring Mapillary street-level imagery.",
 };
 
 export default function RootLayout({
